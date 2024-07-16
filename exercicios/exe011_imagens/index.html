@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png"> <!--Apenas para treinar como colocar icones (lembrando que preciso ter a imagem salva e tals)-->
+    <title>Mídias em HTML 5 </title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em várias plataformas e navegadores</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexíveis">
+    </picture>
+    <h1>Reproduzir Áudio</h1>
+    <p>Vamops aprender a reproduzir áudios em HTML 5</p>
+    <audio src="midia/Headlands - National Sweetheart.mp3" controls></audio> <!--MP3, WAV, OGG (formatos de som)-->
+    <!--Apenas para ficar, quando queremos esolher "audios" ou "musicas" temos alguns formatos tbm,sendo os acima listados, quando ultilizamos precisamos tomar certos cuidados como:
+    usar as TAG <source src="midia/nomedoaudio.mpeg">
+    usar as TAG <source src="midia/nomedoaudio.ogg"
+    usar as TAG <source src="midia/nomedoaudio.wav"
+    Quando utilizamos isso, seré primeiro verificado os MPEG depois o OGG e por ultimo o WAV
+    Também podemos colocar a seguinte TAG 
+    <audio preload="metadata" autoplay controls loop>-->
+</body> 
+</html>

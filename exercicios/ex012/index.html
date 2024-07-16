@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedados no meu próprio servidor.</p>
+    <video src="videos/855418-hd_1920_1080_25fps.mp4" width="500" controls loop></video>
+    <p>Ia colocar um comentario mas achei melhor colocar alguns comandos</p>
+    <p>Para colocar mais opção de videos devemos fazer o seguinter:</p>
+    <code>
+        &lt;video controls&gt;
+            &lt;source src="midia/meu-video.mp4" type="video/mp4"&gt;<br>
+            &lt;source src="midia/meu-video.m4v" type="video/mp4"&gt;<br>
+            &lt;source src="midia/meu-video.webw" type="video/webm"&gt;<br>
+            &lt;source src="midia/meu-video.ogv" type="video/ogg"&gt;<br>
+        &lt;/video controls&gt;
+    </code>
+    <p>Também podemos fazer com uma capa criada a parte (fazemos isso no photoshop ou outro app de imagem)</p>
+    <code>
+        &lt;video controls width="500" poster="imagens/imagemquevocêfez.png" controls&gt;
+            &lt;source src="midia/meu-video.mp4" type="video/mp4"&gt;<br>
+            &lt;source src="midia/meu-video.m4v" type="video/mp4"&gt;<br>
+            &lt;source src="midia/meu-video.webw" type="video/webm"&gt;<br>
+            &lt;source src="midia/meu-video.ogv" type="video/ogg"&gt;<br>
+        &lt;/video controls&gt;
+    </code>
+    <p>Se o computadore não tem compatilidade com reproduição de vídeos</p>
+    <p>Sempre procure <strong>colocar em todos os formatos possiveis</strong>, para uma experiencia de usuario melhor</p>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <p>Nesse caso será cosumido a banda do serviço de terceiros, e não do seu cliente</p>
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=0I5hqjrS83-auOaW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+</body>
+</html>

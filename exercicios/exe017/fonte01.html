@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in (polegadas), px(pixel), pt(ponto), pc(paica) 
+
+            Medidas Relativas
+            em (altura M maisculo), ex (altura x minuscula), rem (relativo a fonte que esta configurada no body), vw (view port), vh (alguta da view port) 
+            16px é geralmente = 1em 
+
+            SEMPRE USAR (EM ou PX)
+            */
+            font-size: 17px;
+            /* wieght - PESO - width - LARGURA - height - ALTURA */
+            /* wieght (o peso da font-wieght)- lighter - normal - bold - bolder */
+            /* exemploes de configurações: 
+            font-size: 1em;
+            font-weight: bolder;
+            font-style: italic;
+            text-decorattion: underline;
+            com as configurações acima, meu texto ficaria em Negrito (bolter) em Italico (italic) e sublinhado (underline)*/
+        }
+        h1{
+            
+            /*shorthand font
+            - font-style -> font-weight-> font-size -> font-family
+            ORDEM NA PRATICA:
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic; */
+
+            font: italic bolder 3em Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        }
+        h2{
+            font: bold 2em 'impact'
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1> <!--Sempre verificar as salves combinations, sempre termine seu css com uma "sans-serif"-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consequuntur numquam nostrum veniam nemo quia amet! Numquam sapiente id, mollitia provident accusantium quam dolores deleniti? Incidunt, eveniet tenetur. Soluta, nobis?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, possimus tenetur in iste corrupti, quae quo inventore molestiae assumenda, officia voluptatibus! Quo blanditiis, eaque iure facilis quasi veniam veritatis dolorum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit modi, possimus quis rem reprehenderit eligendi pariatur, maxime quae eveniet asperiores, perferendis minus et ullam sunt? Repudiandae quae labore magnam quam?</p>
+    <h2>Substítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo culpa aut mollitia cupiditate sint repudiandae, cum commodi, optio aliquid voluptatibus doloremque cumque consequuntur enim ullam dolorum. Quisquam laborum ullam eveniet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugiat voluptatibus magnam id velit earum, laboriosam nesciunt aliquid sapiente rem tempore impedit assumenda, vitae tempora! Et earum fuga inventore est?</p>
+</body>
+</html>
